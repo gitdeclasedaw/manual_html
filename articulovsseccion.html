@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Diferentes usos del articulo y la sección">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, articulo, sección, section, article">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Articulo VS Sección - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Articulos VS Sección</u></h1></header>
+<article><section>
+<p>En el estándar HTML5, el elemento &lt;article&gt; define un bloque completo, autónomo de elementos relacionados mientras que el elemento &lt;section&gt; se define como un bloque de elementos relacionados.
+</p><p>
+¿Podemos usar las definiciones para decidir cómo anidarlos? No, no podemos!
+<br>
+En Internet, se encontrará con páginas HTML donde hay etiquetas &lt;section&gt; que contienen dentro etiquetas &lt;article&gt; y viceversa. 
+<br>
+También encontrará paginas donde etiquetas &lt;section&gt; contienen dentro otras etiquetas &lt;section&gt;, o etiquetas &lt;article&gt; que a su vez contienen &lt;article&gt;. </p>
+<p>Aquí tienes un ejemplo de estos casos:</p>
+<table border>
+	<tr>
+		<td><pre>
+&lt;article&gt;
+
+	&lt;section&gt;
+	
+	&lt;/section&gt;
+	
+	&lt;section&gt;
+	
+	&lt;/section&gt;
+	
+&lt;article&gt;
+
+</pre></td>
+		<td><pre>&lt;article&gt;
+		
+	&lt;section&gt;
+	
+		&lt;article&gt;
+		
+		&lt;/article&gt;
+		
+		&lt;article&gt;
+		
+		&lt;/article&gt;
+		
+	&lt;/section&gt;
+	
+&lt;article&gt;
+</pre></td>
+	</tr>
+</table>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

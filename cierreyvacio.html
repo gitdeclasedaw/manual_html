@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso de etiquetas vacias y de cierre">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, etiquetas, atributos, cierre, vacias, vacia">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Formato/Etiqueta de cierre vs. Elemento vacío - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Etiqueta de cierre vs. Elemento vacío</u></h1></header>
+<article><section>
+<p>La estructura básica de las etiquetas HTML se caracteriza por ir encerradas entre los símbolos &lt;&gt; para las de apertura y &lt;/&gt; para las de cierre, como podemos ver en el siguiente ejemplo:</p>
+<pre>
+&lt;p&gt;Esto es un párrafo.&lt;/p&gt;
+</pre>
+<p>Si queremos hacer comentarios dentro del código html para ayudarnos a identificarlo y comprenderlo rápidamente utilizaremos la siguiente sintaxis:</p>
+<pre>
+&lt;!-- Aquí va el comentario --&gt;
+</pre>
+<p>Sin embargo, algunas etiquetas especiales llamadas <b>&#8220;etiquetas vacías&#8221;</b> no necesitan encerrar ningún texto. La etiqueta <b>&lt;br&gt;</b> por ejemplo, se utiliza para indicar el comienzo de una nueva línea. Por sus características, la etiqueta <code>&lt;br&gt;</code> nunca encierra ningún contenido de texto. En lugar de abrir y cerrar de forma consecutiva la etiqueta (<b>&lt;br&gt;&lt;/br&gt;</b>) se puede utilizar la sintaxis <b>&lt;br/&gt;</b> para indicar que es una etiqueta vacía que se abre y se cierra en ese mismo punto. Aunque esto último en HTML no es obligatorio puesto que se puede dejar simplemente &lt;br&gt; (y ya esta) en XHTML que es mas estricto obliga a que esta etiqueta se cierra &gt;br/&gt;</p>
+</section></article>
+  <br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+  <hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

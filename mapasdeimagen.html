@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso de los mapas de imágen">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, mapa, map, soruce, imagen, imagenes, images, img, image, usemap">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Contenido Encajado/Mapas de Imagen - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Mapas de Imagen</u></h1></header>
+<article><section>
+<p>Un mapa de imagenes en html nos permite localizar e identificar zonas en imagenes, ya sea con textos, links y otros elementos. Un claro ejemplo de los mapas de imágenes es el &quot;ETIQUETADO DE FACEBOOK&quot;, cuando tomamos una foto y seleccionamos la cara de nuestros amigos en la foto, eso podría ser un mapa.</p>
+<p>Lo primero que haremos será cargar nuestra imágen bajo el tag IMG, y le asignamos un tamaño (esto es opcional) y el atributo usemap con el valor que queramos darle al mapa. Ejemplo:</p>
+<br>
+<pre>&lt;img src=&quot;circulos.jpg&quot; alt=&quot;Ejercicio lenguaje de marcas&quot; height=&quot;72px&quot; width=&quot;380px&quot; usemap="#NOMBREDEMAPA"/&gt;</pre>
+<br>
+<p>Ahora ya tenemos la imágen en nuestro documento. A continuacion procederíamos a mapear la imagen, añadiendo los enlaces o atributos de la siguiente manera:</p>
+<br>
+<pre>
+&lt;map name=“NOMBREDEMAPA”&gt;
+	&lt;area CON PRIMER ATRIBUTO&gt;
+	&lt;area CON SEGUNDO ATRIBUTO&gt;
+	.....
+	.....
+	.....
+	&lt;area CON ÚLTIMO ATRIBUTO&gt;
+&lt;/map&gt;
+</pre>
+<br>
+<p>Los atributos que podríamos añadir al elemento area serían los siguientes:</p>
+<ul>
+	<li>shape: default, rect, circle, poly</li>
+	<li>coords: coordenadas separadas por comas</li>
+	<li>href: URL asociada - nohref</li>
+	<li>alt: texto alternativo (obligatorio si href)</li>
+	<li>download</li>
+	<li>target</li>
+</ul>
+<p>Para las cordenadas usariamos el siguiente formato:</p>
+<ul>
+	<li>rect: x-izq, y-sup, x-dcha, y-inf</li>
+	<li>circle: x-centro, y-centro, radio</li>
+	<li>poly: x1, y1, x2, y2,..., xN, yN</li>
+</ul>
+<p>Una vez finalizado, un ejemplo de un posible resultado final seria algo así:</p>
+<br>
+<pre>
+&lt;img src=&quot;circulos.jpg&quot; alt=&quot;Ejercicio lenguaje de marcas&quot; height=&quot;72px&quot; width=&quot;380px&quot; usemap="#mapon"/&gt;  
+ 
+&lt;map name=mapon&gt;
+
+  &lt;area shape=&quot;circle&quot; coords=&quot;44,33,26&quot; href=&quot;http://www.google.com&quot; alt=&quot;rojo&quot; &gt;
+  
+  &lt;area shape=&quot;circle&quot; coords=&quot;138,33,26&quot; alt=&quot;naranja&quot; href=&quot;http://www.yahoo.com&quot; &gt;
+  
+  &lt;area shape=&quot;circle&quot; coords=&quot;235,33,26&quot; alt=&quot;verde&quot; href=&quot;http://www.wikipedia.com&quot; &gt;
+  
+  &lt;area shape=&quot;circle&quot; coords=&quot;337,33,26&quot; alt=&quot;azul&quot; href=&quot;http://www.iessantiagohernandez.com&quot; &gt;
+  
+
+&lt;/map&gt;
+</pre>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

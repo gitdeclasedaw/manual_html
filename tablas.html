@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso de las tablas">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, tablas, table, celda, celdas, tr, td">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Datos Tabulados/Tablas - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Tablas</u></h1></header>
+<article><section>
+<p>Las tablas más sencillas de HTML se definen con tres etiquetas: &lt;table&gt; para crear la tabla, &lt;tr&gt; para crear cada fila y &lt;td&gt; para crear cada columna.</p>
+<p>El uso de cada una de estas seria &lt;tr&gt; para las filas y &lt;td&gt; para las columnas, estando esta ultima encerrada en &lt;tr&gt; y todas encerradas en &lt;table&gt;. Tambien podemos añadir </p>
+<p>A continuación se muestra el código HTML de una tabla sencilla:</p>
+<br>
+<pre>
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Fila 1 en columna 1&gt;&lt;/td&gt;
+			&lt;td&gt;Fila 1 en columna 2&gt;&lt;/td&gt;
+
+		&lt;/tr&gt;
+		&lt;tr&gt;
+
+			&lt;td&gt;Fila 2 en columna 1&gt;&lt;/td&gt;
+			&lt;td&gt;Fila 2 en columna 2&gt;&lt;/td&gt;
+
+		&lt;/tr&gt;
+
+	&lt;/table&gt;</pre>
+	<br>
+<p>Tambien podemos añadir el atributo border a &lt;table&gt; para mostrar el borde de la tabla y usar rowspan y colspan en &lt;td&gt; para expandir una celda  haciendo que se una con otra que tenga a cualquierda de sus 4 lados y en adelante a esa misma dirección elegida, habiendo que elimnar las correspondientes celdas a las que se va a unir. Un ejemplo sencillo sería el siguiente en una tabla de 5X4:</p>
+<br>
+<pre>&lt;table border&gt;
+	&lt;tr&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+	&lt;/tr&gt; 
+	&lt;tr&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td colspan=2 rowspan=2&gt;CELDAS (4,3),(4,4),(5,3),(5,4) UNIDAS&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+		&lt;td&gt;celda&lt;/td&gt;
+	&lt;/tr&gt; 
+&lt;/table&gt;</pre>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso de los atributos">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, formato, atributos, elementos">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Formato/Atributos - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Atributos</u></h1></header>
+<article><section>
+<p>La etiqueta de comienzo puede contener información adicional, tal y como puede verse en el siguiente ejemplo. Dicha información es lo que se conoce como atributos. Los atributos suelen consistir en dos partes:</p>
+<ul>
+	<li>Un atributo nombre (name).</li>
+	<li>Un atributo valor (value).</li>
+</ul>
+<p>Algunos atributos sólo pueden tener un único valor. Son atributos Booleanos y pueden ser incluidos para especificar el nombre del atributo, o dejar su valor vacío. Así los siguientes tres ejemplos tienen el mismo significado:</p>
+<ul>
+	<li>&lt;input required="required"&gt;</li>
+	<li>&lt;input required=""&gt;</li>
+	<li>&lt;input required&gt;</li>
+</ul>
+<p>Los valores de los atributos que constan de una sola palabra o un número se pueden escribir tal cual, pero en cuanto hay dos o más cadenas de caracteres en el valor, éstos deben escribirse entre comillas. Están permitidas tanto las comillas simples ('), como las comillas dobles (") aunque muchos desarrolladores prefieren utilizar siempre comillas simples para que el código sea menos ambiguo para la vista y para evitar errores como el siguiente:</p>
+<ul>
+	<li>&lt;p class=foo bar&gt; (Ten cuidado, esto probablemente no quiere decir lo que piensas que significa.)</li>
+</ul>
+<p>En este ejemplo suponemos que el valor del atributo es "foo bar" pero al no haber comillas en el código se interpreta como si se hubiera escrito así:</p>
+<ul>
+	<li>&lt;p class="foo" bar=""&gt;</li>
+</ul>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

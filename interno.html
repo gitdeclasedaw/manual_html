@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso del hyperenlace interno">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, hyperenlace, link, interno, top, #, enlace, href">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Elementos semánticos de texto/Hyperenlace/Interno - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Hyperenlace Interno</u></h1></header>
+<article><section>
+<p>Para crear un enlace de este tipo es necesario dos componentes, que para aclararnos los vamos a nombrar de la siguiente forma:</p>
+<ol>
+	<li>El enlace: Sería el link, lo que aparecerá en la página para que el usuario haga clic. Sería el enlace de origen propiamente dicho.</li>
+	<br>
+	<li>El ancla: Además se requiere una marca, para saber dónde se dirige el enlace. Es el destino donde nos llevará el navegador al pulsar el link. Le llamamos ancla porque nos permite anclar a esa posición otros enlaces.</li>
+</ol>
+<p>Ambos elementos se crean con la misma etiqueta &lt;a&gt;, tanto el enlace como el ancla. Solo que usaremos distintos atributos dentro de esa etiqueta. Por ejemplo:</p>
+<br>
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+	&lt;head&gt;
+
+		&lt;title&gt;Título del documento - Manual para lenguaje de marcas&lt;/title&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+		&lt;a href=&quot;#nombrerelacion&quot;&gt;Texto del enlace&lt;/a&gt;
+	
+		....
+		....
+		DOCUMENTO
+		....
+		....
+	
+		&lt;a name=&quot;nombrerelacion&quot;&gt;PARTE DEL DOCUMENTO DONDE LLEGAMOS
+		CON EL ENLACE DE ARRIBA&lt;/a&gt;
+	
+		....
+		....
+		DOCUMENTO
+		....
+		....
+
+	&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<p>También podemos usar enlaces internos como &quot;#top&quot; que nos lleva al inicio de la página sin necesidad de ancla.</p>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>

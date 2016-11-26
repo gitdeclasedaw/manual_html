@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Definición y uso del elemento address">
+<meta name="keywords" content="lenguaje, marcas, manual, web, html, elemento, address, dirección, secciones, sección">
+<meta name="author" content="Antonio Del Rio Martinez">
+<title>Secciones/Address - Manual HTML</title>
+</head>
+
+<body>
+<header><h1><u>Address (Dirección)</u></h1></header>
+<article><section>
+<p>Cada articulo publicado en una pagina web debe tener por lo menos una simple informacion de contacto sobre el author del articulo. La directiva &lt;address&gt; incluye dicha informacion de contacto de las mas cercana directiva &lt;article&gt; o &lt;body&gt;. Si la directiva mas cercana es &lt;body&gt;, la informacion del contacto se aplica a todo el documento.</p>
+<p>No es recomandable utilizar la directiva &lt;address&gt; para representar direcciones arbitrarias (por ejemplo, direcciones postales), a menos que dichas direcciones son, de hecho, la información de contacto correspondiente. La directiva &lt;p&gt; es el elemento apropiado para el marcado de las direcciones postales en general.</p>
+<p>Cuando no existe ningun artículo en la página web y sin embargo se quiere introducir información de contaco sobre el author de la página web etc..., la directiva &lt;address&gt; se incluiría junto con otra información en la directiva &lt;footer&gt; de la página. Ejemplo:</p>
+<br>
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+	&lt;head&gt;
+	
+		&lt;title&gt;Título del documento - Manual para lenguaje de marcas&lt;/title&gt;
+		
+	&lt;/head&gt;
+	
+	&lt;body&gt;
+	
+		&lt;p&gt;&lt;a href=&quot;http://hernandezantoniodelrio.blogspot.com.es&quot;&gt;Blog de DAW1&lt;/a&gt;&lt;/p&gt;
+
+		&lt;article&gt;
+		
+			&lt;section&gt;
+ 
+				&lt;p&gt;Antonio presenta el nuevo Manual HTML&lt;/p&gt;
+  
+				&lt;p&gt;martes, 15 de octubre de 2016&lt;/p&gt;
+  
+				&lt;p&gt;El manual contiene toda la información recogida en las clases de primero de desarrollo de aplicaciones web donde......&lt;/p&gt; 
+  
+			&lt;/section&gt;
+		
+		&lt;/article&gt;
+  
+		&lt;address&gt;
+ 
+			&lt;p&gt;Antonio Del Rio&lt;/p&gt;
+  
+			&lt;p&gt;Dirección: calle..... &lt;/p&gt;
+  
+			&lt;p&gt;Telefono 62028....&lt;/p&gt;
+  
+		&lt;/address&gt;
+	
+	&lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+  </pre>
+</section></article>
+<br>
+<nav><a href="index.html"><img src="img/flechaback.png" height="118" width="118" alt="Volver"></a></nav>
+<hr>
+<footer><p><i>Manual creado por Antonio Del Rio para Lenguaje de marcas.</i></p></footer>
+</body>
+</html>
